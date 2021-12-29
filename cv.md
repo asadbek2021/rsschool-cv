@@ -77,6 +77,15 @@
 3. Computer games (CSGO,Metro Exodus,Control)
 
 
+## Project
+
+   - [HTML and CSS (JS) project](https://github.com/raimovasad/responsive_html_css_js) 
+   - [Blog News](https://peaceful-headland-51858.herokuapp.com/api/auth)
+   - [My first CRUD application](https://dry-hollows-24412.herokuapp.com/)
+   - [Adaptive Tour Site](https://asadbek-portfolio-tour-site.netlify.app/)
+   - [Men's Shop](https://asadbek-portfolio-manshop.netlify.app/)
+   - [Abdullah Noman](https://abdullahnoman-portfolio-ae1.netlify.app/)
+   - [Burger Site](https://asadbek-portfolio-burger.netlify.app/)
 
        
 ## Location
