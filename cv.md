@@ -36,39 +36,28 @@
     - *Frontend* ( Javascript,HTML,CSS,Bootstrap,Flexbox,Grid,BEM,Sass,Materialize,AJAX)
     - *Backend* ( Node.js,Express,Fastify,Core modules,REST api,Typescript)
 
-   ***Code Example (Node.js Express Login handler)***
+   ***Code Example (Codewars Regex validate PIN code kata)***
 
      
    ```
-    exports.login = async(req,res,next)=>{
-    const {email,password} = req.body
-    if(!email || !password){
-        return res.redirect('/api/auth')
-        // .json({success:false,message:"Email or password has not been provided"})
-     }
-    try{
-
-        const user = await User.findOne({email:email}).select('+password')
-        if(!user){
-            return res.redirect('/api/auth')
-            // .status(404).json({success:false,message:'User has not been found'})
+   function validatePIN (pin) {
+    let result;
+    if(pin.split('').length !== 4 && pin.split('').length !== 6){
+      return result=false;
+    }
+      const arr = pin.split('')
+    for( elem of arr){
+       elem = parseInt(elem)
+        console.log(typeof elem);
+        console.log(isNaN(elem));
+        if(isNaN(elem)){
+            return result=false
         }
-        const isMatch = await  bcrypt.compare(password,user.password)
-        console.log(isMatch);
-        if(!isMatch){
-            return res.redirect('/api/auth#login')
-            // .status(401).json({success:false,message:"Invalid credentials"})
-        }
-        updateTokens(user._id).then(tokens => {
-         res.cookie('access_token',tokens.accessToken)
-         res.cookie('refresh_token',tokens.refreshToken)
-         
-        res.redirect('/blogs')   
-        })  
-
-     }catch(err){
-        res.status(500).json({success:false, error: err.message})
-        }
+         result=true
+    }
+   return result;
+      
+        
     }
     ```
 
