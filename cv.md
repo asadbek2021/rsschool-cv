@@ -5,7 +5,7 @@
 
 ### Just about myself
 
->I am a junior Fullstack Developer from Tashkent. I have a yearexperience in the field of Backend and Frontend developing. Mydream is developing IT jobs in Uzbekistan and building a greatcorporation like Google! I have chosen my future job so I will do mybest in order to make my dream real!
+>I am a junior Fullstack Developer from Tashkent. I have a yearexperience in the field of Backend and Frontend developing. My dream is developing IT jobs in Uzbekistan and building a greatcorporation like Google! I have chosen my future job so I will do mybest in order to make my dream real!
 
 
 
@@ -33,7 +33,7 @@
 
 3. **Web Programming**
     - *Frontend* ( Javascript,HTML,CSS,Bootstrap,Flexbox,Grid,BEM,Sass,Materialize,AJAX)
-    - *Backend* ( Node.js,Express,Fastify,Core modules,REST api)
+    - *Backend* ( Node.js,Express,Fastify,Core modules,REST api,Typescript)
 
 4. **Soft Skills**
     - *hardworking, responsible, optimistic, openhearted, energetic*
