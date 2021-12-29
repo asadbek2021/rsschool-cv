@@ -35,6 +35,42 @@
     - *Frontend* ( Javascript,HTML,CSS,Bootstrap,Flexbox,Grid,BEM,Sass,Materialize,AJAX)
     - *Backend* ( Node.js,Express,Fastify,Core modules,REST api,Typescript)
 
+   ***Code Example (Node.js Express Login handler)***
+
+     
+   ```
+    exports.login = async(req,res,next)=>{
+    const {email,password} = req.body
+    if(!email || !password){
+        return res.redirect('/api/auth')
+        // .json({success:false,message:"Email or password has not been provided"})
+     }
+    try{
+
+        const user = await User.findOne({email:email}).select('+password')
+        if(!user){
+            return res.redirect('/api/auth')
+            // .status(404).json({success:false,message:'User has not been found'})
+        }
+        const isMatch = await  bcrypt.compare(password,user.password)
+        console.log(isMatch);
+        if(!isMatch){
+            return res.redirect('/api/auth#login')
+            // .status(401).json({success:false,message:"Invalid credentials"})
+        }
+        updateTokens(user._id).then(tokens => {
+         res.cookie('access_token',tokens.accessToken)
+         res.cookie('refresh_token',tokens.refreshToken)
+         
+        res.redirect('/blogs')   
+        })  
+
+     }catch(err){
+        res.status(500).json({success:false, error: err.message})
+        }
+    }
+    ```
+
 4. **Soft Skills**
     - *hardworking, responsible, optimistic, openhearted, energetic*
 
@@ -50,6 +86,9 @@
 2. Reading books (GodFather,Harry Potter,The Lord Of Rings)
 3. Computer games (CSGO,Metro Exodus,Control)
 
+
+
+       
 ## Location
 
    > Uzbekistan, Tashkent region
