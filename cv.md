@@ -1,5 +1,6 @@
 # Asadbek Raimov
 
+<img src="https://user-images.githubusercontent.com/81373435/147676663-80cbf765-cef9-4a53-8931-1b1a760d9af5.jpg" style="width:400px; height:400px" >
 
 
 
@@ -102,10 +103,11 @@
 
 > ***Email :*** [asadbekraimov642@gmail.com](mailto:asadbekraimov642@gmail.com), [raimovasadbek18@gmail.com](mailto:raimovasadbek18@gmail.com)
 > 
->***LinkedIn :*** [Asadbek Raimov](https://www.linkedin.com/in/asadbek-raimov-b700881ba)
+> ***LinkedIn :*** [Asadbek Raimov](https://www.linkedin.com/in/asadbek-raimov-b700881ba)
 >
->***Telegram :*** [@freelanceall](https://t.me/freelanceall)
-
+> ***Telegram :*** [@freelanceall](https://t.me/freelanceall)
+> 
+> ***Discord username :*** *raimovasad#0827*
 
 
 
