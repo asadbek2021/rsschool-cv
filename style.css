@@ -2,6 +2,7 @@
   --body-bg: rgb(0,0,0);
   --aside-bg: #ffca05
 }
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;400;500;700&display=swap');
 
 * {
   margin: 0;
@@ -27,23 +28,39 @@ body{
   height: 100%;
   position: absolute;
   left: 0;
+  top: 0;
+  z-index: 2;
   background: var(--aside-bg);
   width: 50px;
 }
 header.header{
   background: #fff;
   display: flex;
-  height: 300px;
+  margin-left: 50px;
 }
 
 header .cv-header{
   display: flex;
   flex-grow: 1;
   align-items: center;
-
+  font-family: 'Poppins';
+  font-weight: 300;
+  padding: 20px 30px;
 }
+
+.cv-title-job{
+  max-width: 250px;
+  font-size: 25px;
+}
+
+
 .cv-image .cv-image-ava{
-  height: 100%;
+  height: auto;
+  width: 100%;
+}
+.cv-image{
+  max-width: 400px;
+  height: 400px;
 }
 .cv-title-span{
   background: #ffca05;
@@ -55,6 +72,7 @@ nav.nav{
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 4;
   background: #000;
   height: 50px;
   padding: 15px 25px;
@@ -68,4 +86,101 @@ nav.nav{
 .nav-list{
   display: flex;
 
+}
+.nav-link{
+  text-decoration: none;
+  color: #ffca05;
+  transition: .5s;
+}
+
+
+.nav-link:hover{
+  color: #000;
+}
+.nav-link span{
+  color: #ffca05;
+}
+
+.nav-item{
+  margin-right: 15px;
+  text-transform: lowercase;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+main.main{
+  display: flex;
+  margin-left: 50px;
+  font-family: 'Poppins';
+}
+
+.main-title{
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue';
+  max-width: 310px;
+}
+
+.main-title .title-spn{
+  font-weight: 100px;
+}
+
+.left-main{
+  max-width: 400px;
+  background: #292934;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px 15px 50px;
+  color: #fff;
+}
+.right-main{
+  background-color: #22222d;
+  flex-grow: 1;
+}
+.header-spn{
+  display: inline-block;
+  width: 15px;
+  height: 2px;
+  background: #ffca05;
+}
+
+.scnd-title{
+  text-transform: uppercase;
+  font-weight: 100px;
+  font-family: 'Bebas Neue';
+  letter-spacing: 4px;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.about-me{
+  margin-bottom: 100px;
+}
+.contact-info{
+  margin-bottom: 70px;
+}
+.about-me p{
+  font-size: 18px;
+}
+.contact-list li{
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.contact-list li span{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.cntct-link{
+  text-decoration: none;
+  color: #fff;
+}
+.hobbies{
+  margin-bottom: 150px;
+}
+.hobbies-list{
+  display: flex;
+  justify-content: space-between;
 }
