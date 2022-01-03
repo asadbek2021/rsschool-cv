@@ -1,3 +1,405 @@
-.box {
-  background: blue;  
+:root{
+  --body-bg: rgb(0,0,0);
+  --aside-bg: #ffca05
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body{
+  background: var(--body-bg);
+}
+
+
+
+.container{
+  margin: auto;
+  background: #22222d;
+  max-width: 1200px;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.container aside{
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background: var(--aside-bg);
+  width: 50px;
+}
+header.header{
+  background: #fff;
+  display: flex;
+  margin-left: 50px;
+}
+
+header .cv-header{
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  font-family: 'Poppins';
+  font-weight: 300;
+  padding: 20px 30px;
+}
+
+.cv-title-job{
+  max-width: 250px;
+  font-size: 25px;
+  color: #22222d;
+}
+
+
+.cv-image .cv-image-ava{
+  height: auto;
+  width: 100%;
+}
+.cv-image{
+  max-width: 400px;
+  height: 400px;
+}
+.cv-title-span{
+  background: #ffca05;
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+}
+nav.nav{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: #000;
+  height: 50px;
+  padding: 15px 25px;
+}
+.nav-navbar{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-list{
+  display: flex;
+
+}
+.nav-link{
+  text-decoration: none;
+  color: #ffca05;
+  transition: .5s;
+}
+
+
+.nav-link:hover{
+  color: #000;
+}
+.nav-link span{
+  color: #ffca05;
+}
+
+.nav-item{
+  margin-right: 15px;
+  text-transform: lowercase;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+main.main{
+  display: flex;
+  margin-left: 50px;
+  font-family: 'Poppins';
+}
+
+.main-title{
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue';
+  max-width: 310px;
+  color: #22222d;
+}
+
+.main-title .title-spn{
+  font-weight: 100px;
+}
+
+.left-main{
+  max-width: 400px;
+  background: #292934;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px 15px 50px;
+  color: #fff;
+}
+.right-main{
+  background-color: #22222d;
+  flex-grow: 1;
+}
+.header-spn{
+  display: inline-block;
+  width: 15px;
+  height: 2px;
+  background: #ffca05;
+}
+
+.scnd-title{
+  text-transform: uppercase;
+  font-weight: 100px;
+  font-family: 'Bebas Neue';
+  letter-spacing: 4px;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.about-me{
+  margin-bottom: 100px;
+}
+.contact-info{
+  margin-bottom: 70px;
+}
+.about-me p{
+  font-size: 18px;
+}
+.contact-list li{
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.contact-list li span{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.cntct-link{
+  text-decoration: none;
+  color: #fff;
+  transition: .3s;
+}
+.cntct-link:hover{
+  color: #ffca05;
+}
+
+.hobbies{
+  margin-bottom: 150px;
+}
+.hobbies-list{
+  display: flex;
+  justify-content: space-between;
+}
+.hobbies-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hobbies-ico{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #ffca05;
+  color: #ffca05;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+
+/* .right-main style start */
+
+
+.right-main{
+  padding: 60px 20px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.edu-title{
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.edu-bottom{
+  display: flex;
+}
+
+.edu-right{
+  margin-right: 60px;
+}
+.education{
+  margin-bottom: 60px;
+}
+
+.exp-bottom{
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-up{
+  margin-bottom: 30px;
+}
+.exp-title{
+  text-transform: uppercase;
+font-weight: 500;
+margin-bottom: 15px;
+}
+
+.exp-time{
+  display: inline-block;
+  background: #ffca05;
+  color: #000;
+  border-radius: 5px;
+  padding: 5px 10px 0px;
+  margin-right: 10px;
+}
+.exp-company{
+  margin-bottom: 10px;
+}
+
+.experience{
+  margin-bottom: 100px;
+}
+.skills-bottom{
+  display: flex;
+  
+}
+.skill-box{
+  margin-right: 15px;
+}
+
+.skills{
+  margin-bottom: 100px;
+}
+
+
+.circle-wrap {
+  width: 100px;
+  height: 100px;
+  background: #fefcff;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 100px, 100px, 50px);
+}
+
+.circle-wrap .inside-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #22222d;
+  text-align: center;
+  margin-left: 5px;
+  margin-top: 5px;
+  color: #fff;
+  position: absolute;
+  z-index: 100;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+.mask .fill {
+  clip: rect(0px, 50px, 100px, 0px);
+  background-color: #ffca05;
+}
+
+.mask.full,
+.circle .fill{
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+
+
+
+@keyframes fill{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+
+.my-code{
+  margin-bottom: 60px;
+}
+.works-item{
+  margin-bottom: 10px;
+}
+
+.works-link{
+  text-decoration: none;
+  color: #fff;
+  transition: .3s;
+}
+
+.works-link:hover{
+  color: #ffca05;
+}
+.language{
+  margin-bottom: 60px;
+}
+
+footer.footer{
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background: #fff;
+  z-index: 5;
+  padding: 20px 30px;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.rs-logo{
+  width: 200px;
+}
+.rs-logo img{
+  width: 100%;
+}
+.github-acc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22222d;
+  font-family: 'Poppins';
+}
+.github-acc a{
+  width: 70px;
+}
+.github-acc p{
+  font-weight: 500;
+  margin-right: 15px;
+}
+.github-acc img{
+  width: 100%;
 }
