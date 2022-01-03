@@ -22,6 +22,7 @@ body{
   background: #22222d;
   max-width: 1200px;
   position: relative;
+  padding-bottom: 100px;
 }
 
 .container aside{
@@ -51,6 +52,7 @@ header .cv-header{
 .cv-title-job{
   max-width: 250px;
   font-size: 25px;
+  color: #22222d;
 }
 
 
@@ -119,6 +121,7 @@ main.main{
   text-transform: uppercase;
   font-family: 'Bebas Neue';
   max-width: 310px;
+  color: #22222d;
 }
 
 .main-title .title-spn{
@@ -176,11 +179,227 @@ main.main{
 .cntct-link{
   text-decoration: none;
   color: #fff;
+  transition: .3s;
 }
+.cntct-link:hover{
+  color: #ffca05;
+}
+
 .hobbies{
   margin-bottom: 150px;
 }
 .hobbies-list{
   display: flex;
   justify-content: space-between;
+}
+.hobbies-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hobbies-ico{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #ffca05;
+  color: #ffca05;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+
+/* .right-main style start */
+
+
+.right-main{
+  padding: 60px 20px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.edu-title{
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.edu-bottom{
+  display: flex;
+}
+
+.edu-right{
+  margin-right: 60px;
+}
+.education{
+  margin-bottom: 60px;
+}
+
+.exp-bottom{
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-up{
+  margin-bottom: 30px;
+}
+.exp-title{
+  text-transform: uppercase;
+font-weight: 500;
+margin-bottom: 15px;
+}
+
+.exp-time{
+  display: inline-block;
+  background: #ffca05;
+  color: #000;
+  border-radius: 5px;
+  padding: 5px 10px 0px;
+  margin-right: 10px;
+}
+.exp-company{
+  margin-bottom: 10px;
+}
+
+.experience{
+  margin-bottom: 100px;
+}
+.skills-bottom{
+  display: flex;
+  
+}
+.skill-box{
+  margin-right: 15px;
+}
+
+.skills{
+  margin-bottom: 100px;
+}
+
+
+.circle-wrap {
+  width: 100px;
+  height: 100px;
+  background: #fefcff;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 100px, 100px, 50px);
+}
+
+.circle-wrap .inside-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #22222d;
+  text-align: center;
+  margin-left: 5px;
+  margin-top: 5px;
+  color: #fff;
+  position: absolute;
+  z-index: 100;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+.mask .fill {
+  clip: rect(0px, 50px, 100px, 0px);
+  background-color: #ffca05;
+}
+
+.mask.full,
+.circle .fill{
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+
+
+
+@keyframes fill{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+
+.my-code{
+  margin-bottom: 60px;
+}
+.works-item{
+  margin-bottom: 10px;
+}
+
+.works-link{
+  text-decoration: none;
+  color: #fff;
+  transition: .3s;
+}
+
+.works-link:hover{
+  color: #ffca05;
+}
+.language{
+  margin-bottom: 60px;
+}
+
+footer.footer{
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background: #fff;
+  z-index: 5;
+  padding: 20px 30px;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.rs-logo{
+  width: 200px;
+}
+.rs-logo img{
+  width: 100%;
+}
+.github-acc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22222d;
+  font-family: 'Poppins';
+}
+.github-acc a{
+  width: 70px;
+}
+.github-acc p{
+  font-weight: 500;
+  margin-right: 15px;
+}
+.github-acc img{
+  width: 100%;
 }
